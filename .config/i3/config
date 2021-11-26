@@ -383,11 +383,12 @@ exec --no-startup-id volumeicon
 # exec --no-startup-id xfce4-clipman
 
 # Conky
-exec --no-startup-id conky -c ~/.config/i3/system-overview
+#exec --no-startup-id conky -c ~/.config/i3/system-overview
 
 # feh sets wallpaper
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
-
+#exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#nitrogen
+exec --no-startup-id nitrogen --restore
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
