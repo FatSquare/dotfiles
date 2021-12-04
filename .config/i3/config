@@ -387,8 +387,12 @@ exec --no-startup-id volumeicon
 
 # feh sets wallpaper
 #exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#webhome
+exec_always --no-startup-id python ~/.config/webh/app.py
+#(old) php webhome
+#exec --no-startup-id php -S localhost:1111 /home/square/scripts/php/test/index-laptop.php &
 #nitrogen
-exec --no-startup-id nitrogen --restore
+exec_always --no-startup-id nitrogen --restore
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
@@ -654,8 +658,8 @@ popup_during_fullscreen smart
 # want it
 
 for_window [class="^.*"] border pixel 2
-gaps inner 8
-gaps outer 5
+gaps inner 5
+gaps outer 3
 # smart_gaps on
 # smart_borders on
 
