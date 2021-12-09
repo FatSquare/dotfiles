@@ -45,8 +45,8 @@ exec --no-startup-id xrandr --output DP0 --right-of HDMI-0 --auto
 
 # current setup
 
-set $firstMonitor HDMI-0
-set $secondMonitor DP0
+set $secondMonitor HDMI-0
+#set $secondMonitor DP0
 
 # Other Examples
 
@@ -56,11 +56,11 @@ set $secondMonitor DP0
 #set $firstMonitor DVI-I-0
 #set $secondMonitor HDMI-0
 
-#set $firstMonitor DVI-0
+set $firstMonitor DVI-0
 #set $secondMonitor DVI-1
 
 #set $firstMonitor DVI-I-1
-#set $secondMonitor DVI-D-1
+set $firstMonitor DVI-D-1
 
 #set $firstMonitor HDMI-1
 #set $secondMonitor HDMI-2
@@ -575,19 +575,19 @@ for_window [class="Urxvt"] focus
 
 # Variety keybindings mod1 = ALT
 # trash wallpaper
-bindsym mod1+t exec --no-startup-id variety -t
+#bindsym mod1+t exec --no-startup-id variety -t
 # next wallpaper
-bindsym mod1+n exec --no-startup-id variety -n
-bindsym mod1+Right exec --no-startup-id variety -n
+#bindsym mod1+n exec --no-startup-id variety -n
+#bindsym mod1+Right exec --no-startup-id variety -n
 # previous wallpaper
-bindsym mod1+p exec --no-startup-id variety -p
-bindsym mod1+Left exec --no-startup-id variety -p
+#bindsym mod1+p exec --no-startup-id variety -p
+#bindsym mod1+Left exec --no-startup-id variety -p
 # favorite wallpaper
-bindsym mod1+f exec --no-startup-id variety -f
+#bindsym mod1+f exec --no-startup-id variety -f
 # pause wallpaper
-bindsym mod1+Up exec --no-startup-id variety --pause
+#bindsym mod1+Up exec --no-startup-id variety --pause
 # resume wallpaper
-bindsym mod1+Down exec --no-startup-id variety --resume
+#bindsym mod1+Down exec --no-startup-id variety --resume
 
 ################# variety with pywal for your wallpapers/colour schemes
 
